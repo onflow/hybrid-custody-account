@@ -1,4 +1,6 @@
-# Service Account Management
+# [WIP] Hybrid Custody Account
+
+> :warning: This repo is still a WIP while configuring multi-sig on the mainnet HybridCustody deployment account
 
 ## Requirements for signers
 - Git
