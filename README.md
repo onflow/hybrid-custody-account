@@ -9,7 +9,7 @@
 
 ### Git
 
-We will be using this Git repository as a means to pass transaction files back and forth, so you will need to clone it on your local machine.
+We will be using this Git repository to coordinate, achieve consensus on transaction submission, and share signed transactions. So you will need to be able to clone the repo on your local machine.
 
 If you do not have Git configured to authenticate with GitHub, [Github Desktop](https://desktop.github.com/) is likely the easiest way to get started
 
@@ -31,10 +31,6 @@ To ensure it's properlly installed, please run the following:
 flow version
 ```
 
-This should show you the latest version of the Flow CLI. The current flow.json and flow-staking.json require v0.37.0+. The latest version can be downloaded from [here](https://docs.onflow.org/flow-cli/). However, if you require an older version for Flow CLI, the previous versions of flow.json and flow-staking.json are available via the commit e21ab1a via
-
-```git checkout e21ab1a -- flow.json flow-staking.json```
-
 ### Google Cloud SDK
 
 If you have homebrew:
@@ -53,3 +49,49 @@ gcloud auth application-default login
 
 This should pop up a tab in your browser asking you to authorize the SDK. If you're able to, then you're all set!
 
+## Transaction Signing & Sending
+
+To facilitate multi-sig transaction signing & sending, we'll use the tool created by [@bthaile](https://github.com/bthaile) found [here](https://flow-multisig-git-service-account-onflow.vercel.app/).
+
+In the near future, the tool will pull template transactions from this repo. In the meantime, the transactions scripts can be pasted from this repo.
+
+> :warning: When sending a transaction, signers should coordinate a time to meet virtually in a signing party. Signing ritual procedures to follow shortly.
+
+### Walkthrough
+
+#### Setup transaction
+
+1. Select your network
+![select network](./resources/1-network.png)
+
+1. Paste the script
+![enter script](./resources/2-script.png)
+    - Past your script into the Cadence box
+    - Enter the Address you want to send the transaction
+    - Click "Add Account"
+
+1. Generate transaction link
+![generate link](./resources/3-generate.png)
+    - Select the key to sign the transaction
+    - Generate the transaction link
+
+#### Signing
+1. Visit the generated link
+![copy link](./resources/4-link.png)
+
+
+1. Google Login
+![sign in via google auth](./resources/5-oauth.png)
+    - Enter the key path (AKA resource ID) found in your KMS console
+    - Click "Google Login"
+
+1. Click "Continue" in the resulting popup, authorizing the transaction signature 
+![confirm kms signing](./resources/6-confirm.png)
+
+1. Sign the transaction
+![sign transaction](./resources/7-sign.png)
+
+#### Sending
+
+Back at the setup page, we can see that the signature was received. When all signatures have been received, we can send the signed transaction payload.
+![send transaction](./resources/8-send.png)
