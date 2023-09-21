@@ -66,7 +66,7 @@ In the near future, the tool will pull template transactions from this repo. In 
 
 1. Paste the script
 ![enter script](./resources/2-script.png)
-    - Past your script into the Cadence box
+    - Paste your script into the Cadence box
     - Enter the Address you want to send the transaction
     - Click "Add Account"
 
