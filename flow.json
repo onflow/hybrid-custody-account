@@ -1,31 +1,109 @@
 {
-  "emulators": {
-    "default": {
-      "port": 3569,
-      "serviceAccount": "emulator-account"
-    }
-  },
-  "contracts": {},
-  "networks": {
-    "emulator": "127.0.0.1:3569",
-    "mainnet": "access.mainnet.nodes.onflow.org:9000",
-    "testnet": "access.devnet.nodes.onflow.org:9000"
-  },
-  "accounts": {
-    "flow": {
-      "address": "d8a7e05a7ac670c0",
-      "key": {
-        "type": "google-kms",
-        "index": 0,
-        "signatureAlgorithm": "ECDSA_P256",
-        "hashAlgorithm": "SHA2_256",
-        "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1"
-      }
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
     },
-    "emulator-account": {
-      "address": "f8d6e0586b0a20c7",
-      "key": "d5547bbeea9acdf1a95b0df2dbe2b3022acbcd850e83671594b6e240f01bacc9"
+    "accounts": {
+        "bluesign-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/flow-352513/locations/us-east1/keyRings/flow/cryptoKeys/hc/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "bluesign-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/flow-352513/locations/us-east1/keyRings/flow/cryptoKeys/hc/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "ec-dao-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/hybrid-custody/locations/global/keyRings/hybrid-custody/cryptoKeys/jacob-hc-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "ec-dao-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/hybrid-custody/locations/global/keyRings/hybrid-custody/cryptoKeys/jacob-hc-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "d5547bbeea9acdf1a95b0df2dbe2b3022acbcd850e83671594b6e240f01bacc9"
+        },
+        "find-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/bjartek/locations/europe-north1/keyRings/flow/cryptoKeys/flow/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "find-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/bjartek/locations/europe-north1/keyRings/flow/cryptoKeys/flow/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flow-gio-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flow-gio-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flow-hao-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/lilico-334404/locations/northamerica-northeast2/keyRings/Hybrid_Custody_Contract_Key/cryptoKeys/Hybrid_Custody_Contract_Key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flow-hao-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/lilico-334404/locations/northamerica-northeast2/keyRings/Hybrid_Custody_Contract_Key/cryptoKeys/Hybrid_Custody_Contract_Key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flowty-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "flowty-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        }
     }
-  },
-  "deployments": {}
 }
