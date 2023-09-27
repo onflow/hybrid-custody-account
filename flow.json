@@ -93,7 +93,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
-                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/hybrid-custody-multi-sig/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
         },
@@ -101,7 +101,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
-                "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
+                "resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/hybrid-custody-multi-sig/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
         }
