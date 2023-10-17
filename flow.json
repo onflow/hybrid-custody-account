@@ -9,6 +9,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 1,
                 "resourceID": "projects/flow-352513/locations/us-east1/keyRings/flow/cryptoKeys/hc/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -17,6 +18,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 1,
                 "resourceID": "projects/flow-352513/locations/us-east1/keyRings/flow/cryptoKeys/hc/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -25,6 +27,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 2,
                 "resourceID": "projects/hybrid-custody/locations/global/keyRings/hybrid-custody/cryptoKeys/jacob-hc-key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -33,6 +36,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 2,
                 "resourceID": "projects/hybrid-custody/locations/global/keyRings/hybrid-custody/cryptoKeys/jacob-hc-key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -45,6 +49,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 3,
                 "resourceID": "projects/bjartek/locations/europe-north1/keyRings/flow/cryptoKeys/flow/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -53,6 +58,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 3,
                 "resourceID": "projects/bjartek/locations/europe-north1/keyRings/flow/cryptoKeys/flow/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -61,6 +67,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 4,
                 "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -69,6 +76,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 4,
                 "resourceID": "projects/dl-flow-admin/locations/global/keyRings/hybrid-custody-mainnet/cryptoKeys/hybrid-custody-mainnet-key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -77,6 +85,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 5,
                 "resourceID": "projects/lilico-334404/locations/northamerica-northeast2/keyRings/Hybrid_Custody_Contract_Key/cryptoKeys/Hybrid_Custody_Contract_Key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -85,6 +94,7 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 5,
                 "resourceID": "projects/lilico-334404/locations/northamerica-northeast2/keyRings/Hybrid_Custody_Contract_Key/cryptoKeys/Hybrid_Custody_Contract_Key/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -93,6 +103,7 @@
             "address": "d8a7e05a7ac670c0",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 6,
                 "resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/hybrid-custody-multi-sig/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
@@ -101,7 +112,26 @@
             "address": "0x3027cc0f80bdf2ff",
             "key": {
                 "hashAlgorithm": "SHA2_256",
+                "index": 6,
                 "resourceID": "projects/flowty-contracts/locations/global/keyRings/contracts/cryptoKeys/hybrid-custody-multi-sig/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "dapper-mainnet": {
+            "address": "d8a7e05a7ac670c0",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "index": 7,
+                "resourceID": "projects/dl-engplay-eric-ren/locations/us-west1/keyRings/hybridcustody/cryptoKeys/hc-mainnet/cryptoKeyVersions/1",
+                "type": "google-kms"
+            }
+        },
+        "dapper-testnet": {
+            "address": "0x3027cc0f80bdf2ff",
+            "key": {
+                "hashAlgorithm": "SHA2_256",
+                "index": 7,
+                "resourceID": "projects/dl-engplay-eric-ren/locations/us-west1/keyRings/hybridcustody/cryptoKeys/hc-mainnet/cryptoKeyVersions/1",
                 "type": "google-kms"
             }
         }
